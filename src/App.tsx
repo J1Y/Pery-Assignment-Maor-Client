@@ -1,6 +1,6 @@
 import { FormEvent, useRef, useState } from "react";
 
-const SERVER_URL = "https://pery-assignment-maor-server.vercel.app:3000";
+const SERVER_URL = "http://localhost:3000";
 
 function App() {
   const usernameRef = useRef<HTMLInputElement | null>(null);
