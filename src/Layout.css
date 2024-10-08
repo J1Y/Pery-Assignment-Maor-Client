@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  font-family: arial;
+}
+
+.whole-page {
+  display: flex;
+  height: 100vh;
+}
+
+.compete-logo {
+  mix-blend-mode: soft-light;
+  opacity: 0.8;
+  width: fit-content;
+}
+
+.gredient-text {
+  margin: 0;
+  font-family: "Gazpacho";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 84px;
+  white-space: pre-line;
+  color: #ffffff;
+}
+
+.gradient-div {
+  width: 38%;
+  background: radial-gradient(
+      circle at 0% 0%,
+      #6c5bf4 0%,
+      #7d6df6 24.9%,
+      #81bbf7 76.3%,
+      #74cbdf 100%
+    ),
+    rgba(60, 66, 85, 0.2);
+  background-blend-mode: multiply;
+  display: flex;
+  color: white;
+}
+
+.gradient-content-div {
+  padding: 8%;
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 6%;
+}
+
+.shade {
+  height: 264px;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0) 100%,
+    #f7fafd 58.59%,
+    #f0f5fc 18.71%
+  );
+}
+
+.faqs-help-button {
+  text-decoration: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  cursor: pointer;
+  font-family: "arial"; /* I don't have the Poppins font... */
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+  color: #040505;
+  padding: 8px;
+  gap: 8px;
+  background: #ffffff;
+  border: 1px solid #afb1bc;
+  box-shadow: 0px 2px 6px rgba(146, 147, 152, 0.251);
+  border-radius: 80px;
+  margin: 0;
+}
+
+.faqs-help-icon {
+  margin: 0;
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 800px) {
+  .whole-page {
+    flex-direction: column;
+  }
+
+  .gradient-div {
+    width: 100%;
+    height: auto;
+  }
+
+  .content {
+    width: 90%;
+    padding: 5%;
+    align-items: flex-start;
+  }
+
+  .gradient-content-div {
+    padding: 5%;
+  }
+}
+
+@media (max-width: 600px) {
+  .gredient-text {
+    font-size: 48px;
+    line-height: 63px;
+    text-align: center;
+  }
+  .gradient-div {
+    width: 100%;
+  }
+  .gradient-content-div {
+    width: 100%;
+  }
+}
